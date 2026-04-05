@@ -30,12 +30,5 @@
     "locale",
     "break",
     "colors",
-    "logo" : {
-	"type": "command",
-	"source": "pokemon-colorscripts -n gengar",
-	"padding": {
-		"top":1
-	}
-    }
   ]
 }
