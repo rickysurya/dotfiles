@@ -38,7 +38,10 @@ ZSH_THEME="robbyrussell"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
+
+# Manual override to ensure the title stays as an underscore
+echo -ne "\033]2;_\007"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
