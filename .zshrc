@@ -110,3 +110,4 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # ASCII art launch
 fastfetch
+alias codium='flatpak run com.vscodium.codium'

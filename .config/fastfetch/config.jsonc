@@ -3,8 +3,8 @@
   "logo": {
         "type": "file",
 	"source": "/home/ricky/.gengar_ascii",
-        "height": 15,
-        "width": 15,
+        "height": 2,
+        "width": 2,
         "padding": {
             "top": 1,
             "left": 3
@@ -19,7 +19,6 @@
     "uptime",
     "packages",
     "shell",
-    "display",
     "de",
     "wm",
     "terminal",
