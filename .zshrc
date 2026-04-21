@@ -110,4 +110,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # ASCII art launch
 fastfetch
-alias codium='flatpak run com.vscodium.codium'
+
+# run my own news aggregator tui
+alias news='(cd ~/Git/news-tui && ./news-tui)'
