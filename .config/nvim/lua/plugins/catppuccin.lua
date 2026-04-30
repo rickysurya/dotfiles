@@ -3,7 +3,6 @@ return {
   name = "catppuccin",
   opts = {
     flavour = "mocha",
-    transparent_background = true,
     color_overrides = {
       mocha = {
         rosewater = "#ffc0cb",
