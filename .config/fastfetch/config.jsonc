@@ -2,28 +2,24 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
         "type": "file",
-	"source": "/home/ricky/.gengar_ascii",
-        "height": 2,
-        "width": 2,
+	"source": "/home/ricky/.mudkip_ascii",
+        "height": 1,
+        "width": 1,
         "padding": {
             "top": 1,
             "left": 3
         }
   },
   "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
+    "break",
+    "break",
+    "break",
     "kernel",
     "uptime",
-    "packages",
     "shell",
     "de",
     "wm",
-    "terminal",
     "memory",
     "break",
-    "colors"
   ]
 }
