@@ -140,3 +140,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# disabling zsh url magic functions
+DISABLE_MAGIC_FUNCTIONS="true"
