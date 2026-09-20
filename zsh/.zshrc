@@ -108,8 +108,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# ASCII art launch
-fastfetch
 
 # run my own news aggregator tui
 alias news='(cd ~/Git/news-tui && ./news-tui)'
