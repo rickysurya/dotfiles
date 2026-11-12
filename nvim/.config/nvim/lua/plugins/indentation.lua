@@ -9,7 +9,6 @@ return {
           shiftwidth = 4, -- Size of an indent
           softtabstop = 4, -- Number of spaces a <Tab> counts for while editing
           expandtab = true, -- Convert tabs to spaces
-          number = true, -- Enable absolute line numbers
           relativenumber = false,
         },
       },

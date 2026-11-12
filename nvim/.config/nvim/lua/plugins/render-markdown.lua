@@ -6,6 +6,6 @@ return {
       -- AstroNvim uses mini.icons by default, this ensures compatibility
       anti_conceal = { enabled = false },
     },
-    dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" },
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.icons" },
   },
 }

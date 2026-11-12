@@ -1,28 +1,24 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason
 
 ---@type LazySpec
 return {
-  -- use mason-tool-installer for automatically installing Mason packages
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
-    -- overrides `require("mason-tool-installer").setup(...)`
-    opts = {
-      -- Make sure to use the names found in `:Mason`
-      ensure_installed = {
-        -- install language servers
-        "lua-language-server",
-
-        -- install formatters
-        "stylua",
-
-        -- install debuggers
-        "debugpy",
-
-        -- install any other package
-        "tree-sitter-cli",
-      },
-    },
+    opts = function(_, opts)
+      local skip = {
+        ["gopls"] = true,
+        ["gofumpt"] = true,
+        ["goimports"] = true,
+        ["golangci-lint"] = true,
+        ["gomodifytags"] = true,
+        ["delve"] = true,
+        ["gotests"] = true,
+        ["impl"] = true,
+        ["iferr"] = true,
+        ["markdown-toc"] = true,
+        ["markdownlint-cli2"] = true,
+      }
+      opts.ensure_installed = vim.tbl_filter(function(pkg) return not skip[pkg] end, opts.ensure_installed or {})
+    end,
   },
 }
