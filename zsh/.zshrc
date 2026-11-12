@@ -108,11 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-# run my own news aggregator tui
-alias news='(cd ~/Git/news-tui && ./news-tui)'
-
-export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="/usr/local/go/bin:$HOME/go/bin:$PATH"
 
 # default dart ver 3.12.0
 export PATH="$PATH:$HOME/sdk/dart-sdk/bin"
@@ -143,3 +139,6 @@ source <(ng completion script)
 
 # disabling zsh url magic functions
 DISABLE_MAGIC_FUNCTIONS="true"
+
+# run my own news aggregator tui
+alias news='(cd ~/Git/news-tui && ./news-tui)'
